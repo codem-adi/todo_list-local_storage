@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4ec7e87558.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ec7e87558.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="main.js"></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div id="mainBox">
+      <h1 class="heading" id="myId">ToDo List</h1>
+      <div class="list">
+        <div class="inputs">
+          <input
+            type="text"
+            id="fetchedData"
+            placeholder="Let me remember your work . . ."
+          />
+          <button id="addBtn" onclick="addToList()">
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </div>
+        <ul class="myUL" id="Box"></ul>
+      </div>
+    </div>
+  </body>
+</html>
