@@ -90,20 +90,3 @@ function removeTask(deleteButton) {
     e.target.parentElement.remove();
   });
 }
-
-// const request = new XMLHttpRequest();
-
-// request.addEventListener("readystatechange", () => {
-//   if (request.readyState === 4) {
-//     console.log(request);
-//     const Rdata = JSON.parse(request.responseText);
-//     console.log(Rdata.length);
-//     for (let i = 0; i < Rdata.length; i++) {
-//       console.log(Rdata[i].title);
-//       let myUl = document.getElementById("Box");
-//       let theLi = document.createElement("li");
-//       theLi.textContent = Rdata[i].id + " " + Rdata[i].title;
-//       myUl.appendChild(theLi);
-//     }
-//   }
-// });

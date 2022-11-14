@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(43deg, #a683e3 0%, #a683e3 20%, #adb3eb 20%);
+    background-image: linear-gradient(43deg, #a683e3 0%, #a683e3 20%, #adb3eb 20%,);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -77,13 +77,21 @@ p {
     overflow-wrap: break-word;
     padding-right: 20px;
 }
+.deleteAll{
+    padding: .5rem;
+    color: red;
+    border: 1
+    
+    px solid red;
+    border-radius: .5rem;
+}
 
 #deleteMe {
     text-align: center;
     background-color: transparent;
     color: red;
     border: none;
-    /* font-size: 30px; */
+    font-size: 1.2rem;
 }
 
 .inputs {
@@ -114,4 +122,19 @@ input:focus {
     border-radius: 5px;
     color: #a683e3;
     background-color: transparent;
+}
+
+section{
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    width: 100vw;
+    text-align: center;
+    box-shadow: -1px -2px 2px 2px gray;
+}
+section i{
+    margin-right: 10px;
+    color: #a683e3;
 }
