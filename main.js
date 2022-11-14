@@ -90,3 +90,18 @@ function removeTask(deleteButton) {
     e.target.parentElement.remove();
   });
 }
+
+function deleteAll() { 
+  // alert("delete all");
+  // let subElement = myUl.childNodes;
+  // subElement.forEach((element) => {
+  //   element.remove();
+  // })
+
+  let btnChild = document.querySelectorAll("#deleteMe");
+  btnChild.forEach((element) => {
+    element.parentElement.remove()
+  })
+  let arr = [];
+  localStorage.setItem("dataArray", JSON.stringify(arr));
+}

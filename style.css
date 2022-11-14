@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(43deg, #a683e3 0%, #a683e3 20%, #adb3eb 20%,);
+    background-image: linear-gradient(43deg, #a683e3 0%, #a683e3 20%, #adb3eb 20%,#adb3eb 80%,#a683e3 80%);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -31,6 +31,7 @@ body {
     text-align: center;
     border-radius: 10px;
     color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 .list {
@@ -42,7 +43,6 @@ body {
     height: 100%;
     margin-top: 15px;
     padding: 0px;
-
 }
 
 ul {
@@ -79,17 +79,17 @@ p {
 }
 .deleteAll{
     padding: .5rem;
-    color: red;
-    border: 1
-    
-    px solid red;
+    margin-left: 10px;
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
     border-radius: .5rem;
+    background-color: transparent;
 }
 
 #deleteMe {
     text-align: center;
     background-color: transparent;
-    color: red;
+    color: rgb(255, 0, 0);
     border: none;
     font-size: 1.2rem;
 }
@@ -132,9 +132,9 @@ section{
     color:white;
     width: 100vw;
     text-align: center;
-    box-shadow: -1px -2px 2px 2px gray;
+    box-shadow: -1px -1px 1px 1px rgb(245, 245, 245);
 }
 section i{
     margin-right: 10px;
-    color: #a683e3;
+    color: #c02323;
 }
