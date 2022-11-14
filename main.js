@@ -63,7 +63,7 @@ function addToList() {
 function addDataToLocalStorage(data) {
   if (localStorage.getItem("dataArray")) {
     let arr = loadArr();
-    arr.push(data);
+    arr.push(data.trim());
     localStorage.setItem("dataArray", JSON.stringify(arr));
     console.log(arr);
   } else {
@@ -79,7 +79,7 @@ function removeTask(deleteButton) {
     let arr = loadArr();
     let text = e.target.previousElementSibling.innerText;
     arr.forEach((_, i) => {
-      if (arr[i] === text) {
+      if (arr[i].toLowerCase() === text.toLowerCase()) {
         console.log(_, i, text);
         arr.splice(i, 1);
       }
